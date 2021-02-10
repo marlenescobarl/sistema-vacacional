@@ -5,7 +5,8 @@ public class Sistemavacacional
     {
         Scanner go = new Scanner(System.in);
         String nombre = "";
-        int clave = 0, antiguedad = 0;
+        int clave = 1, 2, 3; 
+        int antiguedad = 0;
         
         System.out.println("Bienvenidos al Sistema vacacional CC - Company");
         System.out.println("");
@@ -15,6 +16,44 @@ public class Sistemavacacional
         antiguedad = go.nextInt();
         System.out.println("Ingrese la clave del departamento del trabajador ");
         clave = go.nextInt();
+
+        if (clave == 1)
+        {
+            if (antiguedad == 1)
+            {
+                System.out.println("" + nombre + " tiene derecho a 6 dias de vacaciones");
+            } else 
+            {
+                if (antiguedad >= 2 && antiguedad <= 6 )
+                {
+                    System.out.println ("" + nombre + " tiene derecho a 14 dias de vacaciones");
+                } else 
+                {
+                    if (antiguedad == 7)
+                    {
+                        System.out.println ("" + nombre + " tiene derecho a 20 dias de vacaciones");
+                    } else 
+                    {
+                        System.out.prinln ("" + nombre + "  aun no tiene derecho a vacaciones");
+                    }
+                }
+            }
+        } else 
+        {
+            if (clave == 2)
+            {
+                if (antiguedad ==1)
+                {
+                    System.out.prinln ("" + nombre + " Tiene derecho a 7 dias de vacaciones");
+                } else 
+                {
+                    if (antiguedad >= 2 && antiguedad <=6)
+                    {
+                        System.out.prinln ("" + nombre + " tiene derecho a 15 dias de vacaciones");
+                    }
+                }
+            }
+        }
 
 
     }
