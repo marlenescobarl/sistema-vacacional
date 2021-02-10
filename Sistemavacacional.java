@@ -44,15 +44,51 @@ public class Sistemavacacional
             {
                 if (antiguedad ==1)
                 {
-                    System.out.prinln ("" + nombre + " Tiene derecho a 7 dias de vacaciones");
+                    System.out.println ("" + nombre + " Tiene derecho a 7 dias de vacaciones");
                 } else 
                 {
                     if (antiguedad >= 2 && antiguedad <=6)
                     {
-                        System.out.prinln ("" + nombre + " tiene derecho a 15 dias de vacaciones");
+                        System.out.println ("" + nombre + " tiene derecho a 15 dias de vacaciones");
+                    } else 
+                    {
+                        if (antiguedad == 7)
+                        {
+                            System.out.println("" + nombre + " tiene derecho a 22 dias de vacaciones");
+                        } else 
+                        {
+                            System.out.println("" + nombre + " aun no tiene derecho a vacaciones");
+                        }
                     }
                 }
             }
+        } else 
+        {
+            if (clave ==3)
+            {
+                if (antiguedad == 1)
+                {
+                    System.out.println("" + nombre + "tiene derecho a 10 dias de vacaciones");
+                } else 
+                {
+                    if (antiguedad >= 2 && antiguedad <=6)
+                    {
+                        System.out.println(""+ nombre + " tiene derecho a 20 dias de vacaciones");
+                    }else 
+                    {
+                        if (antiguedad ==7)
+                        {
+                            System.out.println("" + nombre + " tiene derecho a 30 dias de vacaciones");
+                        } else 
+                        {
+                            System.out.println("" + nombre + " aun no tiene derecho a vacaciones");
+                        }
+                    }
+                }
+            }
+        } else
+        {
+            System.out.println("Lo sentimos la clave del departamento ingresada NO existe");
         }
 
 
