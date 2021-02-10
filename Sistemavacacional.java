@@ -5,7 +5,7 @@ public class Sistemavacacional
     {
         Scanner go = new Scanner(System.in);
         String nombre = "";
-        int clave = 1, 2, 3; 
+        int clave = 0; 
         int antiguedad = 0;
         
         System.out.println("Bienvenidos al Sistema vacacional CC - Company");
@@ -22,69 +22,47 @@ public class Sistemavacacional
             if (antiguedad == 1)
             {
                 System.out.println("" + nombre + " tiene derecho a 6 dias de vacaciones");
-            } else 
+            } else if (antiguedad >= 2 && antiguedad <= 6 )
             {
-                if (antiguedad >= 2 && antiguedad <= 6 )
-                {
-                    System.out.println ("" + nombre + " tiene derecho a 14 dias de vacaciones");
-                } else 
-                {
-                    if (antiguedad == 7)
-                    {
-                        System.out.println ("" + nombre + " tiene derecho a 20 dias de vacaciones");
-                    } else 
-                    {
-                        System.out.prinln ("" + nombre + "  aun no tiene derecho a vacaciones");
-                    }
-                }
-            }
-        } else 
-        {
-            if (clave == 2)
+                System.out.println ("" + nombre + " tiene derecho a 14 dias de vacaciones");
+            } else if (antiguedad == 7)
+            {
+                System.out.println ("" + nombre + " tiene derecho a 20 dias de vacaciones");
+            } else
+            {
+                System.out.prinln ("" + nombre + "  aun no tiene derecho a vacaciones");
+            } else if (clave == 2)
             {
                 if (antiguedad ==1)
                 {
                     System.out.println ("" + nombre + " Tiene derecho a 7 dias de vacaciones");
+                } else if (antiguedad >= 2 && antiguedad <=6)
+                {
+                    System.out.println ("" + nombre + " tiene derecho a 15 dias de vacaciones");
+                } else if (antiguedad == 7)
+                {
+                    System.out.println("" + nombre + " tiene derecho a 22 dias de vacaciones");
                 } else 
                 {
-                    if (antiguedad >= 2 && antiguedad <=6)
-                    {
-                        System.out.println ("" + nombre + " tiene derecho a 15 dias de vacaciones");
-                    } else 
-                    {
-                        if (antiguedad == 7)
-                        {
-                            System.out.println("" + nombre + " tiene derecho a 22 dias de vacaciones");
-                        } else 
-                        {
-                            System.out.println("" + nombre + " aun no tiene derecho a vacaciones");
-                        }
-                    }
+                    System.out.println("" + nombre + " aun no tiene derecho a vacaciones");
                 }
-            }
-        } else 
-        {
-            if (clave ==3)
+                    
+                
+            } else if (clave ==3)
             {
                 if (antiguedad == 1)
                 {
                     System.out.println("" + nombre + "tiene derecho a 10 dias de vacaciones");
+                } else if (antiguedad >= 2 && antiguedad <=6)
+                {
+                    System.out.println(""+ nombre + " tiene derecho a 20 dias de vacaciones");
+                } else if (antiguedad ==7)
+                {
+                    System.out.println("" + nombre + " tiene derecho a 30 dias de vacaciones");
                 } else 
                 {
-                    if (antiguedad >= 2 && antiguedad <=6)
-                    {
-                        System.out.println(""+ nombre + " tiene derecho a 20 dias de vacaciones");
-                    }else 
-                    {
-                        if (antiguedad ==7)
-                        {
-                            System.out.println("" + nombre + " tiene derecho a 30 dias de vacaciones");
-                        } else 
-                        {
-                            System.out.println("" + nombre + " aun no tiene derecho a vacaciones");
-                        }
-                    }
-                }
+                    System.out.println("" + nombre + " aun no tiene derecho a vacaciones");
+                } 
             }
         } else
         {
