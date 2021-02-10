@@ -8,7 +8,9 @@ public class Sistemavacacional
         int clave = 0; 
         int antiguedad = 0;
         
-        System.out.println("Bienvenidos al Sistema vacacional CC - Company");
+        System.out.println("_____________________________________________________");
+        System.out.println("|   Bienvenidos al Sistema vacacional CC - Company  |");
+        System.out.println("|___________________________________________________|");
         System.out.println("");
         System.out.println("Ingrese el nombre del trabajador ");
         nombre = go.nextLine();
@@ -67,6 +69,18 @@ public class Sistemavacacional
         } else 
         {
             System.out.println("Lo sentimos la clave del departamento ingresada NO existe");
+            System.out.println("");
+            System.out.println("      ***     ***");
+            System.out.println("      ***     ***");
+            System.out.println("   ");
+            System.out.println("          ****");
+            System.out.println("");
+            System.out.println("    ||              ||");
+            System.out.println("     ||            ||");
+            System.out.println("      ||          ||");
+            System.out.println("        ||||||||||");
+            System.out.println("");
+            System.out.println("");
         }
     }
 }
